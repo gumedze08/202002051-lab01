@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>AI Content Analyzer</title>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+	<body>
+		<div id="app">
+			<header>
+				<h1>AI Content Analyzer</h1>
+				<button id="scanPageBtn" title="Scan current page">Scan Page</button>
+			</header>
+			<section id="summary">
+				<div id="confidence">No results yet</div>
+			</section>
+			<section id="results"></section>
+			<footer>
+				<label class="row">
+					<input type="checkbox" id="autoScanToggle" />
+					<span>Autoscan on page load</span>
+				</label>
+				<div class="muted">On-device heuristics only. No text is sent anywhere.</div>
+			</footer>
+		</div>
+		<script type="module" src="popup.js"></script>
+	</body>
+</html>
